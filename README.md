@@ -7,8 +7,10 @@ Purpose: Functional Tic-Tac-Toe with arithmatic between two users over a network
 File Summaries:
 
 board: Basic serializable object used as data between the players of the game. 
+
 serverThread: Purpose is to initiate the game of tic-tac-toe. 
-- If two players request to the server to 'start' the game, then the server assigns information to the players, but is not responsible for the actual game between the players
+- If two players request to the server to 'start' the game, then the server assigns information to the players, but is not responsible for the actual game between the players.
+
 tcpClient 1-2: main function threads for the two respective players of the game.
 - Clients communicate with each other through TCP pipelines where they pass 'threadSharedMemory' as the game
 threadSharedMemory: Object that forces the client code to be synchronized.
